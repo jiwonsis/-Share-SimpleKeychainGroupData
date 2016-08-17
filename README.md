@@ -17,13 +17,12 @@
 작업을 하는 동안 참고한 사이트 들입니다.:
 
 * [Apple Developer] - 에플 개발자 키체인 문서!
-* [Ace Editor] - awesome web-based text editor
+* [Githup-KeychainAccess] - 키체인 렙퍼 분석
+
 License None
 ----
 
 **라이센스는 없습니다 그러니 마음껏 퍼다가 사용하세요!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
    [Apple Developer]: <https://developer.apple.com/library/ios/documentation/Security/Reference/keychainservices/>
