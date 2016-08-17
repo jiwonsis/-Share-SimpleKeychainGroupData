@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cff-Rt-d4v">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YGG-Sl-7fJ">
+            <objects>
+                <viewController id="Cff-Rt-d4v" customClass="ViewController" customModule="keyChainShare2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0s1-H8-17K"/>
+                        <viewControllerLayoutGuide type="bottom" id="7mQ-QS-DKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jRb-NS-svz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-94-R8D">
+                                <rect key="frame" x="20" y="285" width="477" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dAI-r1-rfr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irq-hC-l6j">
+                                <rect key="frame" x="507" y="285" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="DPQ-GI-lGQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="T4q-tl-opY"/>
+                                </constraints>
+                                <state key="normal" title="Commit"/>
+                                <connections>
+                                    <action selector="commitedAction:" destination="Cff-Rt-d4v" eventType="touchUpInside" id="ePY-ja-BcF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KeyChain group sharing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-ow-oGU">
+                                <rect key="frame" x="193" y="241" width="215" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Irq-hC-l6j" firstAttribute="centerY" secondItem="fn3-94-R8D" secondAttribute="centerY" id="6mN-ha-h4b"/>
+                            <constraint firstItem="Irq-hC-l6j" firstAttribute="leading" secondItem="fn3-94-R8D" secondAttribute="trailing" constant="10" id="ADm-qS-fae"/>
+                            <constraint firstItem="fn3-94-R8D" firstAttribute="leading" secondItem="jRb-NS-svz" secondAttribute="leading" constant="20" id="BYz-mF-BCr"/>
+                            <constraint firstItem="fn3-94-R8D" firstAttribute="top" secondItem="9fm-ow-oGU" secondAttribute="bottom" constant="20" id="DVF-XQ-1ch"/>
+                            <constraint firstItem="fn3-94-R8D" firstAttribute="centerY" secondItem="jRb-NS-svz" secondAttribute="centerY" id="Wdr-ic-b04"/>
+                            <constraint firstItem="fn3-94-R8D" firstAttribute="centerY" secondItem="jRb-NS-svz" secondAttribute="centerY" id="X8n-r4-VqG"/>
+                            <constraint firstAttribute="trailing" secondItem="Irq-hC-l6j" secondAttribute="trailing" constant="39" id="kfV-7b-Nyy"/>
+                            <constraint firstItem="9fm-ow-oGU" firstAttribute="centerX" secondItem="jRb-NS-svz" secondAttribute="centerX" id="kqS-Ps-ucB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="fn3-94-R8D" id="Ka3-tC-VQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uy9-BU-fu4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

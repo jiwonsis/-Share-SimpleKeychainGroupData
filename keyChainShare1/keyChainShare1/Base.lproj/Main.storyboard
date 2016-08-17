@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="keyChainShare1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="err-kw-dgD">
+                                <rect key="frame" x="20" y="285" width="477" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Q7R-as-Cms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ceL-h7-6v5"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvq-2e-lfo">
+                                <rect key="frame" x="507" y="285" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1QB-JD-g3H"/>
+                                    <constraint firstAttribute="width" constant="54" id="Lsc-QK-6ae"/>
+                                </constraints>
+                                <state key="normal" title="Commit"/>
+                                <connections>
+                                    <action selector="commitedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXC-hm-MY5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KeyChain group sharing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-1c-o6T">
+                                <rect key="frame" x="193" y="241" width="215" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qvq-2e-lfo" secondAttribute="trailing" constant="39" id="AWg-hB-85o"/>
+                            <constraint firstItem="qvq-2e-lfo" firstAttribute="leading" secondItem="err-kw-dgD" secondAttribute="trailing" constant="10" id="L1F-fQ-gke"/>
+                            <constraint firstItem="err-kw-dgD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NCd-j2-BSO"/>
+                            <constraint firstItem="TLD-1c-o6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8x-vb-0JD"/>
+                            <constraint firstItem="err-kw-dgD" firstAttribute="top" secondItem="TLD-1c-o6T" secondAttribute="bottom" constant="20" id="WHE-QQ-c69"/>
+                            <constraint firstItem="qvq-2e-lfo" firstAttribute="centerY" secondItem="err-kw-dgD" secondAttribute="centerY" id="eXN-TX-JCA"/>
+                            <constraint firstItem="err-kw-dgD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v4C-Ul-xVQ"/>
+                            <constraint firstItem="err-kw-dgD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zEQ-aD-itw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="err-kw-dgD" id="HPP-k6-dtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
